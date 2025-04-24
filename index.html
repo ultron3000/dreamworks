@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamWorks Animation Collection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlDJx3okWKblpVzKsrf6Szf81G_DB_jzfFw&s') no-repeat center center fixed;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 50px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      font-family: 'Helvetica', sans-serif;
+      font-weight: bold;
+      color: #ffcc00; /* DreamWorks Yellow */
+    }
+
+    .movie-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    .movie-card {
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid #ffcc00;
+      border-radius: 12px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.3s ease;
+      text-align: center;
+      backdrop-filter: blur(8px);
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+    }
+
+    .movie-card a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .movie-card a:hover {
+      color: #ffcc00;
+    }
+
+    .back-button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #c00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+    .back-button:hover {
+      background-color: #900;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .movie-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .movie-card {
+        width: 80%;
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .movie-card {
+        width: 90%;
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <h1>DreamWorks Animation Collection</h1>
+
+  <div class="movie-container">
+    <div class="movie-card"><a href="thewildrobot.html">The Wild Robot (2024)</a></div>
+    <div class="movie-card"><a href="turbo.html">Turbo (2013)</a></div>
+    <div class="movie-card"><a href="thecroods.html">The Croods (2013)</a></div>
+    <div class="movie-card"><a href="thecroods2.html">The Croods: A New Age (2020)</a></div>
+    <div class="movie-card"><a href="mrpeabody.html">Mr. Peabody & Sherman (2014)</a></div>
+    <div class="movie-card"><a href="overthehedge.html">Over the Hedge (2006)</a></div>
+    <div class="movie-card"><a href="riseofguardians.html">Rise of the Guardians (2012)</a></div>
+    <div class="movie-card"><a href="thebadguys.html">The Bad Guys (2022)</a></div>
+    <div class="movie-card"><a href="rubygillman.html">Ruby Gillman, Teenage Kraken (2023)</a></div>
+    <div class="movie-card"><a href="dogman.html">Dog Man (2024)</a></div>
+    <div class="movie-card"><a href="antz.html">Antz (1998)</a></div>
+    <div class="movie-card"><a href="princeofegypt.html">The Prince of Egypt (1998)</a></div>
+    <div class="movie-card"><a href="monstersvsaliens.html">Monsters vs. Aliens (2009)</a></div>
+    <div class="movie-card"><a href="howtotrainyourdragon.html">How to Train Your Dragon (2010)</a></div>
+    <div class="movie-card"><a href="howtotrainyourdragon2.html">How to Train Your Dragon 2 (2014)</a></div>
+    <div class="movie-card"><a href="howtotrainyourdragon3.html">How to Train Your Dragon: The Hidden World (2019)</a></div>
+    <div class="movie-card"><a href="dragonsdawnofdragonsracers.html">Dragons: Dawn Of The Dragon Racers (2014)</a></div>
+    <div class="movie-card"><a href="bookofdragons.html">Book of Dragons (2011)</a></div>
+    <div class="movie-card"><a href="dragonsgiftsofthenightfury.html">Dragons: Gift of the Night Fury (2011)</a></div>
+    <div class="movie-card"><a href="roadtoeldorado.html">The Road to El Dorado (2000)</a></div>
+    <div class="movie-card"><a href="chickenrun.html">Chicken Run (2000)</a></div>
+    <div class="movie-card"><a href="sinbad.html">Sinbad: Legend of the Seven Seas (2003)</a></div>
+    <div class="movie-card"><a href="megamin.html">Megamind (2010)</a></div>
+    <div class="movie-card"><a href="flushedaway.html">Flushed Away (2006)</a></div>
+    <div class="movie-card"><a href="wallacegromit.html">Wallace & Gromit: The Curse of the Were-Rabbit (2005)</a></div>
+    <div class="movie-card"><a href="shrek.html">Shrek (2001)</a></div>
+    <div class="movie-card"><a href="shrek2.html">Shrek 2 (2004)</a></div>
+    <div class="movie-card"><a href="shrek3.html">Shrek the Third (2007)</a></div>
+    <div class="movie-card"><a href="shrekforeverafter.html">Shrek Forever After (2010)</a></div>
+    <div class="movie-card"><a href="spiritstallion.html">Spirit: Stallion of the Cimarron (2002)</a></div>
+    <div class="movie-card"><a href="madagascar.html">Madagascar (2005)</a></div>
+    <div class="movie-card"><a href="kungfupanda.html">Kung Fu Panda (2008)</a></div>
+    <div class="movie-card"><a href="trolls.html">Trolls (2016)</a></div>
+    <!-- Add other movies here as needed -->
+  </div>
+
+  <br><a href="index.html" class="back-button">Back to Home</a>
+
+</body>
+</html>
