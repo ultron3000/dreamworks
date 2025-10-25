@@ -105,23 +105,23 @@
     opacity: 1 !important;
   }
 
-  
+  @media (max-width: 768px) {
+    .controls-container {
+      padding: 0.5rem;
+    }
+    .control-btn {
+      padding: 0.5rem;
+    }
+    .volume-container {
+      display: none;
+    }
+    .mobile-volume {
+      display: block;
+    }
+  }
 </style>
 
-    @media (max-width: 768px) {
-      .controls-container {
-        padding: 0.5rem;
-      }
-      .control-btn {
-        padding: 0.5rem;
-      }
-      .volume-container {
-        display: none;
-      }
-      .mobile-volume {
-        display: block;
-      }
-    }
+   
   </style>
 </head>
 <body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col items-center p-4 md:p-8">
